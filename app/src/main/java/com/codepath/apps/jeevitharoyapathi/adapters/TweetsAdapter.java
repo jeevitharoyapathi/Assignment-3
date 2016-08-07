@@ -180,4 +180,9 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         }
         return tweetId;
     }
+
+    public void addToFirstPosition(Tweet tweet) {
+        mDataset.add(0, tweet);
+        notifyDataSetChanged();
+    }
 }

@@ -7,6 +7,8 @@ class DataBinderMapper {
     }
     public android.databinding.ViewDataBinding getDataBinder(android.databinding.DataBindingComponent bindingComponent, android.view.View view, int layoutId) {
         switch(layoutId) {
+                case com.codepath.apps.jeevitharoyapathi.R.layout.activity_compose:
+                    return com.codepath.apps.jeevitharoyapathi.databinding.ActivityComposeBinding.bind(view, bindingComponent);
         }
         return null;
     }
@@ -21,6 +23,12 @@ class DataBinderMapper {
         }
         final int code = tag.hashCode();
         switch(code) {
+            case -27571560: {
+                if(tag.equals("layout/activity_compose_0")) {
+                    return com.codepath.apps.jeevitharoyapathi.R.layout.activity_compose;
+                }
+                break;
+            }
         }
         return 0;
     }
@@ -32,6 +40,7 @@ class DataBinderMapper {
     }
     private static class InnerBrLookup {
         static String[] sKeys = new String[]{
-            "_all"};
+            "_all"
+            ,"tweet"};
     }
 }

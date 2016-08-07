@@ -1,22 +1,25 @@
 package com.codepath.apps.jeevitharoyapathi.models;
 
+import com.google.gson.annotations.SerializedName;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 /**
  * Created by jeevitha.royapathi on 8/4/16.
  */
+@Parcel
 public class User {
 
+    @SerializedName("id")
     private long id;
+    @SerializedName("name")
     private String name;
+    @SerializedName("screen_name")
     private String screenName;
+    @SerializedName("profile_image_url")
     private String profileImageUrl;
-    private int followersCount;
-    private String description;
-    private String profileBackgroundImageUrl;
-    private int friendsCount;
-    private boolean following;
 
     public long getId() {
         return id;
@@ -48,46 +51,6 @@ public class User {
 
     public void setProfileImageUrl(String profileImageUrl) {
         this.profileImageUrl = profileImageUrl;
-    }
-
-    public int getFollowersCount() {
-        return followersCount;
-    }
-
-    public void setFollowersCount(int followersCount) {
-        this.followersCount = followersCount;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getProfileBackgroundImageUrl() {
-        return profileBackgroundImageUrl;
-    }
-
-    public void setProfileBackgroundImageUrl(String profileBackgroundImageUrl) {
-        this.profileBackgroundImageUrl = profileBackgroundImageUrl;
-    }
-
-    public int getFriendsCount() {
-        return friendsCount;
-    }
-
-    public void setFriendsCount(int friendsCount) {
-        this.friendsCount = friendsCount;
-    }
-
-    public boolean isFollowing() {
-        return following;
-    }
-
-    public void setFollowing(boolean following) {
-        this.following = following;
     }
 
     public static User fromJSON(JSONObject jsonObject) {

@@ -2,6 +2,7 @@
 package com.codepath.apps.jeevitharoyapathi.activities;
 
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -16,7 +17,7 @@ import java.lang.Override;
 public class TimelineActivity_ViewBinding<T extends TimelineActivity> implements Unbinder {
   protected T target;
 
-  private View view2131427445;
+  private View view2131427450;
 
   public TimelineActivity_ViewBinding(final T target, Finder finder, Object source) {
     this.target = target;
@@ -26,13 +27,14 @@ public class TimelineActivity_ViewBinding<T extends TimelineActivity> implements
     target.mToolbar = finder.findRequiredViewAsType(source, R.id.toolbar, "field 'mToolbar'", Toolbar.class);
     view = finder.findRequiredView(source, R.id.fab_add, "field 'mFavAdd' and method 'createNewTweet'");
     target.mFavAdd = finder.castView(view, R.id.fab_add, "field 'mFavAdd'", FloatingActionButton.class);
-    view2131427445 = view;
+    view2131427450 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.createNewTweet();
       }
     });
+    target.mSwipeRefreshLayout = finder.findRequiredViewAsType(source, R.id.referesh_tweets, "field 'mSwipeRefreshLayout'", SwipeRefreshLayout.class);
   }
 
   @Override
@@ -43,9 +45,10 @@ public class TimelineActivity_ViewBinding<T extends TimelineActivity> implements
     target.mRecyclerView = null;
     target.mToolbar = null;
     target.mFavAdd = null;
+    target.mSwipeRefreshLayout = null;
 
-    view2131427445.setOnClickListener(null);
-    view2131427445 = null;
+    view2131427450.setOnClickListener(null);
+    view2131427450 = null;
 
     this.target = null;
   }

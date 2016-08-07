@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:2:1-50:12
+ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:2:1-55:12
 	package
 		ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:3:5-50
 		INJECTED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml
@@ -24,7 +24,7 @@ ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/Andr
 	android:name
 		ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:8:22-78
 application
-ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:10:5-48:19
+ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:10:5-53:19
 MERGED from [com.android.support:appcompat-v7:24.1.1] /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:24.1.1] /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:24.1.1] /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/AndroidManifest.xml:23:5-20
@@ -128,16 +128,20 @@ ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/Andr
 	android:scheme
 		ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:40:21-43
 activity#com.codepath.apps.jeevitharoyapathi.activities.TimelineActivity
-ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:43:9-74
+ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:43:9-65
 	android:name
 		ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:43:19-62
 meta-data#com.google.android.gms.version
-ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:45:9-47:69
+ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:48:9-50:69
 MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:47:13-66
+		ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:50:13-66
 	android:name
-		ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:46:13-58
+		ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:49:13-58
+activity#com.codepath.apps.jeevitharoyapathi.activities.ComposeActivity
+ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:52:9-73
+	android:name
+		ADDED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml:52:19-61
 uses-sdk
 INJECTED from /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.codepath.libraries:android-oauth-handler:1.0.0] /Users/jeevitha.royapathi/dev/Codepath/Assignment-3/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.0.0/AndroidManifest.xml:7:5-9:41
